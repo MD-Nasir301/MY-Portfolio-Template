@@ -23,4 +23,15 @@
   });
 
 
+  AOS.init({
+    offset: 150,
+    delay: 60,
+    duration: 1100, 
+    easing: 'ease', 
+    mirror: false, 
+    anchorPlacement: 'top-bottom', 
+  
+  });
+
+
 })(jQuery);
