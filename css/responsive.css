@@ -1,13 +1,12 @@
 /* Normal desktop :1200px. (xl) */
 @media (min-width: 1200px) and (max-width: 1500px) {
 
-
 }
 
 
 /* Normal desktop :992px. (lg) */
 @media (min-width: 992px) and (max-width: 1200px) {
-  
+
   .single-pricing-box {
     margin: 0 -10px;
   }
@@ -64,7 +63,8 @@
   }
   footer#footer-sec {
     margin: 0;
-  }
+    padding-bottom: 0px;
+}
   .footer-single-card {
     margin-bottom: 30px;
   }

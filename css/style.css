@@ -96,9 +96,8 @@ a,
 	transition: all 0.3s ease-out 0s;
 }
 
-/* sidebar toggle btn style ============= */
-
-.sidebar-toggle-btn {
+/* sidebar open and close btn style (for < 992 device)============= */
+.sidebar-open-btn {
   position: fixed;
   right: 20px;
   top: 10px;
@@ -117,7 +116,7 @@ a,
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
-button.sidebar-toggle-btn p {
+.sidebar-open-btn p {
   width: 25px;
   height: 3px;
   background: rgb(85, 70, 70);
@@ -134,7 +133,7 @@ button.sidebar-toggle-btn p {
   height: 38px;
   color: #ffffff;
   font-weight: 800;
-  z-index: 999999;
+  z-index: 999955;
   text-align: center;
   display: none;
   cursor: pointer;
@@ -147,11 +146,10 @@ button.sidebar-toggle-btn p {
   height: 100vh;
   background: #fff;
   position: fixed;
-  display: block;
   left: 0;
   top: 0;
   overflow: auto;
-  z-index: 999999;
+  z-index: 9999;
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
@@ -200,12 +198,14 @@ button.sidebar-toggle-btn p {
   text-decoration: none;
   color: gray;
 }
-ul.social-links i {
+ul.social-links a {
   font-size: 1.8rem;
   margin: 7px 3px;
+  color: #000;
 }
-ul.social-links i:hover {
+ul.social-links a:hover {
   color: gray;
+  cursor: pointer;
 }
 
 /* main-content style ==================== */
