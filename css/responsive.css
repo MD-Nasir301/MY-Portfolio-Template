@@ -65,6 +65,9 @@
   footer#footer-sec {
     margin: 0;
   }
+  .footer-single-card {
+    margin-bottom: 30px;
+  }
   section.copyright-area {
     margin: 0;
   }
