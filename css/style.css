@@ -137,6 +137,7 @@ a,
   text-align: center;
   display: none;
   cursor: pointer;
+  border: none;
 }
 
 /* sidebar-left style =================*/
