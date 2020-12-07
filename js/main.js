@@ -11,14 +11,20 @@
     $("#sidebar-left-sec").css("left", "-330px");
     $(".close-btn").hide();
   });
-  // Sidebar hides by clicking on any sidebar element for less than 992px devices
-  if ($(window).width() < 992) {
-    $("#sidebar-left-sec").click(function () {
-      $("#sidebar-left-sec").css("left", "-341px");
-      $(".close-btn").hide();
-    });
-  }
 
+  // Sidebar hides for less than 992px devices and clicking on any sidebar element
+  $(window).resize(function () {
+    if ($(window).width() > 992) {
+      $("#sidebar-left-sec").css("left", "0px");
+      $(".close-btn").hide();
+    } else {
+      $("#sidebar-left-sec").css("left", "-341px");
+      $("#sidebar-left-sec").click(function () {
+        $("#sidebar-left-sec").css("left", "-341px");
+        $(".close-btn").hide();
+      });
+    }
+  });
 
   // animation aos
   AOS.init({
